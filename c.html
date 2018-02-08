@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.box{
+    width: 1200px;
+    padding: 10px;
+    border: 5px solid #ffffff;
+    margin: 0;
+	font-family:'Lato','Arial';
+	font-weight:200;font-size:1.300em;
+	color:#ffffff;
+}
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   height:5%;
+   width: 100%;
+   background-color: gray;
+   color:red;
+   text-align: center;
+}
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+</style>
+<script type="text/javascript" src="totop.js">
+</script>
+</head>
+<body>
+<div style="font-family:'Courier New';color:green;font-size:20px;text-align:left">Department of <br/>
+<span style="font-family:'Times New Roman';font-weight:10;font-size:1.5em;color:rgba(0,128,34,1);">Computer Science Engrieeing</span> </div><br/>
+</div>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Staff</a>
+  <div class="dropdown-content">
+   <a href="staff.html">UG</a>
+      <a href="staff1.html">PG</a></div>
+	</li>
+<li><a href="student.html">Students</a></li> 
+	<li><a href="Timetalble.html">Timetable</a></li>
+	<li><a href="sam.html">Seminar/Workshop</a></li>
+	<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">Extra Curricular</a>
+	<div class="dropdown-content">
+      <a href="#">NSS</a>
+      <a href="#">Sports</a>
+      <a href="#">Lead</a>
+	  <a href="#">CSE Forum</a>
+	  <a href="#">Project Achivements</a>
+	</li>
+	<li><a href="g.html">Gallery</a></li>
+	<li><a href="c.html">Contact us</a></li>
+</ul>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="20.php" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Indian</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

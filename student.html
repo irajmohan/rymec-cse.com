@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head><title>student</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {margin:25px;
+	
+}
+
+div.polaroid {
+  width: 45%;
+  background-color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: 25px;margin-right:25px;
+  margin-top:25px;
+  float:left;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 10px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="totop.js">
+</script>
+</head>
+<body>
+<div style="font-family:'Courier New';color:green;font-size:20px;text-align:left">Department of <br/>
+<span style="font-family:'Times New Roman';font-weight:10;font-size:1.5em;color:rgba(0,128,34,1);">Computer Science Engrieeing</span> </div><br/>
+</div>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Staff</a>
+  <div class="dropdown-content">
+   <a href="staff.html">UG</a>
+      <a href="staff1.html">PG</a></div>
+	</li>
+<li><a href="student.html">Students</a></li>  
+	<li><a href="Timetalble.html">Timetable</a></li>
+	<li><a href="sam.html">Seminar/Workshop</a></li>
+	<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn">Extra Curricular</a>
+	<div class="dropdown-content">
+      <a href="#">NSS</a>
+      <a href="#">Sports</a>
+      <a href="#">Lead</a>
+	  <a href="#">CSE Forum</a>
+	  <a href="#">Project Achivements</a>
+	</li>
+	<li><a href="g.html">Gallery</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+</ul>
+<center>
+<h1>III Sem To VIII Sem Student List 2017-18 </h1>
+<object width="900" height="500" data="STD LIST 17-18 ODD SEM BLOG.pdf"></object>
+<h1>  Elective Student List for V & VII Sem </h1>
+<object width="900" height="500" data="ELECTIVE_STUDENT_LIST.pdf"></object>
+
+<h1> V SEM 2010 SCHEME PARALLEL COURSE STUDENT LIST</h1>
+<object width="900" height="500" data="STUDENT LIST V SEM PARALLEL COURSE 17-18_2.pdf"></object>
+</center>
+</body>
+</html>
